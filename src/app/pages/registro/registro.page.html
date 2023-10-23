@@ -1,0 +1,47 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="mostrarMenu()" color="success">
+        <ion-icon slot="icon-only" name="menu-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Registro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">enviar</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <form>
+    <ion-item lines="full">
+      <ion-label position="floating">Nombre?:</ion-label>
+      <ion-input type="text" name="txtNombre" [(ngModel)]="NewUsuario.nombre" placeholder="Cachupin.." required></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Apellido?:</ion-label>
+      <ion-input type="text" name="txtTipo" [(ngModel)]="NewUsuario.apellido" placeholder="tapia.." required></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Usuario?:</ion-label>
+      <ion-input type="text" name="txtRaza" [(ngModel)]="NewUsuario.username" placeholder="duoc.." required></ion-input>
+    </ion-item>
+
+
+    <ion-item lines="full">
+      <ion-label position="floating">Carrera?:</ion-label>
+      <ion-input type="text" name="txtRaza" [(ngModel)]="NewUsuario.carrera" placeholder="ing informatica.." required></ion-input>
+    </ion-item>
+
+    <ion-row>
+      <ion-col>
+        <ion-button (click)="crearUsuario()" expand="block" color="success">Registrar</ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>

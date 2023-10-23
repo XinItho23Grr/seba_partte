@@ -1,0 +1,36 @@
+{
+    "alumnos":[
+        {
+            "id": 1,
+            "nombre": "Raul",
+            "apellido": "Raza",
+            "usuario": "Ra.Raza",
+            "carrera": "Ingemeria en informatica"
+            
+        },
+        {
+            "id": 2,
+            "nombre": "Elba",
+            "apellido": "Surero",
+            "usuario": "El.Surero",
+            "carrera": "Mecanica"
+        }
+    ],
+
+    "usuarios":[
+        {
+            "id": 1,
+            "usuario": "Ra.Raza",
+            "password": "duoc",
+            "role": "usuario",
+            "isactive": true 
+        },
+        {
+            "id": 2,
+            "usuario": "El.Surero",
+            "password": "maipu",
+            "role": "usuario",
+            "isactive": true 
+        }
+    ]
+}
